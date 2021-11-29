@@ -21,7 +21,6 @@ backpropagation, where every pass of the network is checked and corrected, adjus
 the weights of the neurons.
  
 Important: <br>
-
 <b>Normalized Data:</b>
 <br>Having normalized data means converting that 0-255 range of values to a range of
 0-1. The values must be adapted to fit between 0 and 1, which means they will be float
@@ -50,23 +49,23 @@ classification problems.<br> <br>
 
 see our simple neural network file in this repository:<br><br>
 
-1.The model is created as Sequential() as the layers are created sequentially. First, we
+1. The model is created as Sequential() as the layers are created sequentially. First, we
 add a dense layer with 16 neurons and the shape of the input is passed so that the
 neural network knows the shape of the input. After which, the ReLU activation function
 is applied. We use this function because it generally gives good results. We stack
-another layer with eight neurons and the same activation function.<br>
-2.At the end, we use the Flatten function to convert the array to one dimension and
+another layer with eight neurons and the same activation function.<br><br>
+2. At the end, we use the Flatten function to convert the array to one dimension and
 then the last dense layer is stacked, where the number of classes should represent the
 number of neurons (in this case, there would be 10 classes for the MNIST dataset). The
 softmax function is applied in order to get the results as a one-hot encoder, as we have
-mentioned before.<br>
-3.Compile the model,In order to do that, we use the compile method.<br>
+mentioned before.<br><br>
+3. Compile the model,In order to do that, we use the compile method.<br>
 4.We pass the loss function, which is used to calculate the error for the backpropagation
 process. For this problem, we will be using categorial cross-entropy as the loss
 function, as this is a categorical problem. The optimizer used is Adadelta, which
 performs very well in most situations. We establish accuracy as the main metric to be
-considered in the model.<br>
-5.We are going to use what is called a callback in Keras. These are called in every epoch
+considered in the model.<br><br>
+5. We are going to use what is called a callback in Keras. These are called in every epoch
 during training. We will be using the Checkpoint function in order to save our model
 with the best validation result on every epoch<br>
-6.The function to train this model is called fit().<br>
+6. The function to train this model is called fit().<br>
