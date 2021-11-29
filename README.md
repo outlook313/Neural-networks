@@ -32,7 +32,7 @@ range So, first we need to convert the data to a float and then normalize it.
 transforms the number of the digit of every label to one-hot encoding, In order to do that, we need to use a function from Keras, from its utils package (the name has changed to np_utils), called to_categorical().
 
 <br>
-<b>Activation Function</b>
+<b>Activation Function:</b><br>
 For a basic neural network, dense layers (or fully connected layers) are employed.
 These neural networks are also called fully connected neural networks. These contain
 a series of neurons that represent the neurons of the human brain. They need an
