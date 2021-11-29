@@ -6,7 +6,7 @@ Artificial neural networks (ANNs) are information processing systems that are
 modeled on and inspired by the human brain, which they try to mimic by learning
 how to recognize patterns in data. They accomplish tasks by having a well structured
 architecture. This architecture is composed of several small processing units called
-neurons, which are interconnected in order to solve major problems.<br>
+neurons, which are interconnected in order to solve major problems.<br><br>
 These algorithms work by taking all of the data as input, in which the first layer of
 neurons acts as the input. After that, every entry is passed to the next layer of neurons,
 where these are multiplied by some value and processed by an activation function,
